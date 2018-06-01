@@ -1,0 +1,5 @@
+questions:
+  - variable: config.org_name
+    description: "Your Organization"
+    default: "CAI"
+    type: string
