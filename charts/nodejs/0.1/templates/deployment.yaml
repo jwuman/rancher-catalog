@@ -15,7 +15,7 @@ spec:
                 run: nodejs
         spec:
             containers:
-                - image: jwuman/rancher-cicd:nodejs-0.1
+                - image: jwuman/rancher-cicd:latest
                   name: rancher-nodejs
                   env: {}
                   ports:
