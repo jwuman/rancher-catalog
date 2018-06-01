@@ -1,0 +1,24 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    labels:
+        run: nodejs
+    name: nodejs
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            run: nodejs
+    template:
+        metadata:
+            labels:
+                run: nodejs
+        spec:
+            containers:
+                - image: jwuman/rancher-cicd:latest
+                  name: rancher-nodejs
+                  env: {}
+                  ports:
+                      - containerPort: 3000
+                  resources: {}
+status: {}
